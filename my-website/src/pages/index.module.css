@@ -1,0 +1,76 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookDetails {
+  padding: 4rem 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  margin: 2rem;
+}
+
+.bookCard {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  height: 100%;
+}
+
+.bookCard h2 {
+  color: #2e8555;
+  margin-top: 0;
+  border-bottom: 2px solid #2e8555;
+  padding-bottom: 0.5rem;
+}
+
+.bookCard ul {
+  padding-left: 1.2rem;
+}
+
+.bookCard li {
+  margin-bottom: 0.5rem;
+}
+
+.hero__description {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #333;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 996px) {
+  .bookDetails {
+    padding: 2rem 0;
+    margin: 1rem;
+  }
+
+  .bookCard {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+}

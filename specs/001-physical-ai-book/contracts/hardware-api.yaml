@@ -1,0 +1,93 @@
+# Hardware Interface API Contract
+
+## Overview
+API for controlling and monitoring physical hardware components in the PHYSICAL-AI-BOOK project.
+
+## Base URL
+`http://localhost:8000/api/v1`
+
+## Endpoints
+
+### GET /hardware/components
+List all connected hardware components
+
+**Response**:
+```json
+{
+  "components": [
+    {
+      "id": "sensor_001",
+      "name": "Temperature Sensor",
+      "type": "sensor",
+      "status": "active",
+      "last_reading": {
+        "value": 23.5,
+        "unit": "celsius",
+        "timestamp": "2025-12-10T10:30:00Z"
+      }
+    }
+  ]
+}
+```
+
+### GET /hardware/components/{id}
+Get details of a specific hardware component
+
+**Response**:
+```json
+{
+  "id": "sensor_001",
+  "name": "Temperature Sensor",
+  "type": "sensor",
+  "status": "active",
+  "properties": {
+    "min_value": -40,
+    "max_value": 80,
+    "unit": "celsius"
+  },
+  "last_reading": {
+    "value": 23.5,
+    "unit": "celsius",
+    "timestamp": "2025-12-10T10:30:00Z"
+  }
+}
+```
+
+### POST /hardware/components/{id}/control
+Send control command to a hardware component
+
+**Request**:
+```json
+{
+  "command": "set_value",
+  "parameters": {
+    "value": 100
+  }
+}
+```
+
+**Response**:
+```json
+{
+  "status": "success",
+  "command": "set_value",
+  "component_id": "actuator_001",
+  "timestamp": "2025-12-10T10:30:00Z"
+}
+```
+
+### GET /hardware/safety/status
+Get overall safety status of the system
+
+**Response**:
+```json
+{
+  "overall_status": "safe",
+  "components_status": {
+    "sensor_001": "normal",
+    "actuator_001": "normal"
+  },
+  "last_safety_check": "2025-12-10T10:30:00Z",
+  "safety_score": 95
+}
+```

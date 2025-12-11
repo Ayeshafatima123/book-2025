@@ -1,4 +1,4 @@
-# Claude Code Rules
+# Qwen Code Rules
 
 This file is generated during init for the selected agent.
 
@@ -208,10 +208,3 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
-
-## Active Technologies
-- Python 3.9+ for AI examples, Markdown for book content + TensorFlow/PyTorch, Arduino IDE, Raspberry Pi GPIO libraries, OpenCV, NumPy, Pandas (001-physical-ai-book)
-- Git repository for source code, PDF/EPUB generation tools for book output (001-physical-ai-book)
-
-## Recent Changes
-- 001-physical-ai-book: Added Python 3.9+ for AI examples, Markdown for book content + TensorFlow/PyTorch, Arduino IDE, Raspberry Pi GPIO libraries, OpenCV, NumPy, Pandas

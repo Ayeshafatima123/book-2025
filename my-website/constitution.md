@@ -14,8 +14,7 @@
 Every feature must advance the understanding of how AI interacts with physical systems and materials. The book must provide concrete examples of AI controlling physical processes, manipulating objects, or interfacing with hardware. Theoretical concepts must be grounded in real-world applications.
 
 ### II. Practical Implementation
-All examples and tutorials must be hoi
-eproducible with accessible hardware. Code examples should work with common physical computing platforms (Arduino, Raspberry Pi, etc.) and standard AI frameworks. Every chapter must include hands-on projects that readers can build themselves.
+All examples and tutorials must be reproducible with accessible hardware. Code examples should work with common physical computing platforms (Arduino, Raspberry Pi, etc.) and standard AI frameworks. Every chapter must include hands-on projects that readers can build themselves.
 
 ### III. Test-First Learning (NON-NEGOTIABLE)
 Every concept must be demonstrated with testable examples before theoretical explanation. Readers should verify their understanding through practical exercises. All code examples must include validation steps and expected outcomes.
@@ -51,4 +50,3 @@ Content creation follows a structured approach:
 This constitution governs all aspects of the PHYSICAL-AI-BOOK project. All contributions must align with these principles. Changes to this constitution require explicit approval from project maintainers and must be documented with clear rationale.
 
 **Version**: 1.0.0 | **Ratified**: 2025-12-10 | **Last Amended**: 2025-12-10
-

@@ -1,0 +1,10 @@
+# Core dependencies for PHYSICAL-AI-BOOK
+tensorflow>=2.13.0
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.21.0
+pandas>=1.3.0
+opencv-python>=4.5.0
+RPi.GPIO>=0.7.0
+pyyaml>=6.0
+pytest>=7.0.0
