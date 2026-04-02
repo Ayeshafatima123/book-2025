@@ -43,11 +43,11 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: './textbook-sidebars.ts',
           editUrl:
             'https://github.com/Ayeshafatima123/hackathon--book-2025/edit/main/',
-          path: 'docs',
-          routeBasePath: 'docs',
+          path: 'textbook',
+          routeBasePath: '/', // ✅ Book available at root URL
         },
         blog: {
           showReadingTime: true,
@@ -68,10 +68,10 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'textbook',
-        path: 'textbook',
-        routeBasePath: 'textbook',
-        sidebarPath: './textbook-sidebars.ts',
+        id: 'docs',
+        path: 'docs',
+        routeBasePath: 'docs',
+        sidebarPath: './sidebars.ts',
         editUrl:
           'https://github.com/Ayeshafatima123/hackathon--book-2025/edit/main/',
       },
@@ -94,21 +94,17 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Book Chapters',
+          label: 'Chapters',
         },
-        {
-          type: 'doc',
-          docId: 'front-matter/title-page',
-          position: 'left',
-          label: 'Textbook',
-          docsPluginId: 'textbook',
-        },
-        { to: '/docs/introduction', label: 'Get Started', position: 'left' },
-        { to: '/chatbot', label: 'AI Assistant', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/chatbot', label: 'AI Assistant', position: 'left' },
         {
           href: 'https://github.com/Ayeshafatima123/hackathon--book-2025',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          type: 'localeDropdown',
           position: 'right',
         },
       ],
