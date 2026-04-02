@@ -1,45 +1,54 @@
 ---
-id: 3
-title: implement-chapter-1-tasks
-stage: red
-date: 2025-12-10
-surface: agent
+name: implement-chapter-1-tasks
+description: Implement Chapter 1 tasks for PHYSICAL-AI-BOOK project
 model: claude-sonnet-4-5-20250929
-feature: 001-physical-ai-book
-branch: 001-physical-ai-book
-user: user
-command: /sp.implement
-labels: [implementation,physical-ai-book,chapter-1]
-links:
-  spec: specs/001-physical-ai-book/spec.md
-  plan: specs/001-physical-ai-book/plan.md
-  tasks: specs/001-physical-ai-book/tasks.md
-  ticket: null
-  adr: null
-  pr: null
-files:
- - my-website/src/hardware_interface.py
- - my-website/src/safety_framework.py
- - my-website/src/config.py
- - my-website/src/testing_framework.py
- - my-website/src/models/__init__.py
- - my-website/content/chapter-01/introduction.md
- - my-website/hardware-guides/sensor-led-setup.md
- - my-website/code-examples/sensor-integration/basic_sensor.py
- - my-website/code-examples/actuator-control/basic_led.py
- - my-website/code-examples/ai-models/simple_decision.py
- - my-website/code-examples/chapter-01/basic_ai_hardware.py
- - my-website/docs/safety-guidelines/basic-hardware.md
- - my-website/docs/troubleshooting/chapter-01.md
- - my-website/content/chapter-01/validation.md
- - my-website/tests/unit/test_sensor_integration.py
- - my-website/tests/unit/test_led_control.py
- - my-website/tests/unit/test_ai_models.py
- - my-website/tests/integration/test_chapter_01.py
-tests:
- - pytest my-website/tests/unit/
- - pytest my-website/tests/integration/test_chapter_01.py
+agent: specify
+argument-hint: implement
+tools: []
 ---
+
+## Metadata
+**ID:** 3
+**Stage:** red
+**Date:** 2025-12-10
+**Surface:** agent
+**Feature:** 001-physical-ai-book
+**Branch:** 001-physical-ai-book
+**User:** user
+**Command:** /sp.implement
+**Labels:** implementation, physical-ai-book, chapter-1
+
+**Links:**
+- Spec: specs/001-physical-ai-book/spec.md
+- Plan: specs/001-physical-ai-book/plan.md
+- Tasks: specs/001-physical-ai-book/tasks.md
+- Ticket: null
+- ADR: null
+- PR: null
+
+**Files:**
+- my-website/src/hardware_interface.py
+- my-website/src/safety_framework.py
+- my-website/src/config.py
+- my-website/src/testing_framework.py
+- my-website/src/models/__init__.py
+- my-website/content/chapter-01/introduction.md
+- my-website/hardware-guides/sensor-led-setup.md
+- my-website/code-examples/sensor-integration/basic_sensor.py
+- my-website/code-examples/actuator-control/basic_led.py
+- my-website/code-examples/ai-models/simple_decision.py
+- my-website/code-examples/chapter-01/basic_ai_hardware.py
+- my-website/docs/safety-guidelines/basic-hardware.md
+- my-website/docs/troubleshooting/chapter-01.md
+- my-website/content/chapter-01/validation.md
+- my-website/tests/unit/test_sensor_integration.py
+- my-website/tests/unit/test_led_control.py
+- my-website/tests/unit/test_ai_models.py
+- my-website/tests/integration/test_chapter_01.py
+
+**Tests:**
+- pytest my-website/tests/unit/
+- pytest my-website/tests/integration/test_chapter_01.py
 
 ## Prompt
 

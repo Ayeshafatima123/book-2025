@@ -1,6 +1,24 @@
-# PHYSICAL-AI-BOOK
+# Physical AI & Humanoid Robotics Book
 
-An educational book demonstrating how to build AI systems that interact with physical hardware and real-world systems.
+Welcome to the Physical AI & Humanoid Robotics book repository. This comprehensive guide covers everything from basic sensor integration to advanced robotics applications.
+
+## Features
+
+- Interactive Docusaurus-based website
+- Comprehensive book content covering Physical AI concepts
+- Hands-on examples and projects
+- RAG (Retrieval-Augmented Generation) Chatbot - Ask questions about the book content
+- Colorful and engaging UI with slideshow presentations
+
+## RAG Chatbot
+
+This repository includes an AI-powered chatbot that can answer questions about the book content using Retrieval-Augmented Generation (RAG). The chatbot uses:
+
+- **Qdrant Cloud** for vector storage and similarity search
+- **OpenAI API** for response generation
+- **Book content** as the knowledge base
+
+To learn how to set up and run the RAG chatbot, see [../RAG_SETUP.md](../RAG_SETUP.md).
 
 ## Overview
 
@@ -16,16 +34,39 @@ This book provides practical examples of AI controlling physical processes, sens
 
 ## Getting Started
 
-1. Install dependencies: `pip install -r requirements.txt`
-2. Follow the hardware setup guides in `hardware-guides/`
-3. Run examples from `code-examples/`
+1. Install dependencies: `npm install`
+2. Start the development server: `npm start`
+3. For the RAG chatbot: `npm run dev` (starts both website and API server)
 
 ## Prerequisites
 
-- Python 3.9+
+- Node.js v18+ (for the website and RAG API)
+- Python 3.9+ (for code examples)
 - Hardware: Raspberry Pi or Arduino with connected sensors/actuators
-- Required Python packages listed in requirements.txt
+- Qdrant Cloud account and OpenAI API key (for RAG chatbot)
 
 ## Safety First
 
 ⚠️ Always follow safety guidelines when working with physical AI systems. See `docs/safety-guidelines/` for detailed safety information.
+
+## Running with RAG Chatbot
+
+To run both the website and the RAG API server:
+
+```bash
+npm run dev
+```
+
+This will start both the Docusaurus website and the RAG API server simultaneously.
+
+## Deployment
+
+This site is automatically deployed to GitHub Pages using GitHub Actions. Any changes pushed to the `main` branch will trigger a new build and deployment.
+
+To deploy manually, run:
+```bash
+npm run build
+npm run deploy
+```
+
+The site is published at: https://hackathon-book-2025.github.io

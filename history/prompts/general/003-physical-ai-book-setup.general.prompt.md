@@ -1,25 +1,35 @@
 ---
-id: 3
-title: Physical AI Book Setup
-stage: general
-date: 2025-12-10
-surface: agent
+name: Physical AI Book Setup
+description: Create a Physical AI Book with specific content
 model: claude-sonnet-4-5-20250929
-feature: none
-branch: 001-physical-ai-book
-user: claude
-command: "Physical AI Book setup"
-labels: ["configuration", "ui", "docusaurus", "physical-ai"]
-links:
-  spec: null
-  ticket: null
-  adr: null
-  pr: null
-files:
-  - "/mnt/d/hackathon-book-2025/my-website/docusaurus.config.ts"
-  - "/mnt/d/hackathon-book-2025/my-website/src/pages/index.tsx"
-tests: []
+agent: specify
+argument-hint: general
+tools: []
 ---
+
+## Metadata
+**ID:** 3
+**Stage:** general
+**Date:** 2025-12-10
+**Surface:** agent
+**Feature:** none
+**Branch:** 001-physical-ai-book
+**User:** claude
+**Command:** "Physical AI Book setup"
+**Labels:** configuration, ui, docusaurus, physical-ai
+
+**Links:**
+- Spec: null
+- Ticket: null
+- ADR: null
+- PR: null
+
+**Files:**
+- "/mnt/d/hackathon-book-2025/my-website/docusaurus.config.ts"
+- "/mnt/d/hackathon-book-2025/my-website/src/pages/index.tsx"
+
+**Tests:**
+- none
 
 ## PROMPT_TEXT
 Create a Physical AI Book with specific content

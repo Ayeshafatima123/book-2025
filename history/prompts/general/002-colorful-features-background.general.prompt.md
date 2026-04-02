@@ -1,24 +1,34 @@
 ---
-id: 2
-title: Colorful Features Background
-stage: general
-date: 2025-12-10
-surface: agent
+name: Colorful Features Background
+description: Create a more colorful background for the book features section
 model: claude-sonnet-4-5-20250929
-feature: none
-branch: 001-physical-ai-book
-user: claude
-command: "Colorful features background styling"
-labels: ["styling", "ui", "css", "docusaurus", "features"]
-links:
-  spec: null
-  ticket: null
-  adr: null
-  pr: null
-files:
-  - "/mnt/d/hackathon-book-2025/my-website/src/components/HomepageFeatures/styles.module.css"
-tests: []
+agent: specify
+argument-hint: general
+tools: []
 ---
+
+## Metadata
+**ID:** 2
+**Stage:** general
+**Date:** 2025-12-10
+**Surface:** agent
+**Feature:** none
+**Branch:** 001-physical-ai-book
+**User:** claude
+**Command:** "Colorful features background styling"
+**Labels:** styling, ui, css, docusaurus, features
+
+**Links:**
+- Spec: null
+- Ticket: null
+- ADR: null
+- PR: null
+
+**Files:**
+- "/mnt/d/hackathon-book-2025/my-website/src/components/HomepageFeatures/styles.module.css"
+
+**Tests:**
+- none
 
 ## PROMPT_TEXT
 Create a more colorful background for the book features section

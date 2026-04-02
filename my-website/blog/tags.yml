@@ -17,3 +17,58 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+machine-learning:
+  label: 'Machine Learning'
+  permalink: '/blog/tags/machine-learning'
+  description: 'Machine Learning related posts'
+
+ai:
+  label: 'AI'
+  permalink: '/blog/tags/ai'
+  description: 'Artificial Intelligence related posts'
+
+robotics:
+  label: 'Robotics'
+  permalink: '/blog/tags/robotics'
+  description: 'Robotics related posts'
+
+reinforcement-learning:
+  label: 'Reinforcement Learning'
+  permalink: '/blog/tags/reinforcement-learning'
+  description: 'Reinforcement Learning related posts'
+
+computer-vision:
+  label: 'Computer Vision'
+  permalink: '/blog/tags/computer-vision'
+  description: 'Computer Vision related posts'
+
+image-processing:
+  label: 'Image Processing'
+  permalink: '/blog/tags/image-processing'
+  description: 'Image Processing related posts'
+
+physical-ai:
+  label: 'Physical AI'
+  permalink: '/blog/tags/physical-ai'
+  description: 'Physical AI related posts'
+
+hardware:
+  label: 'Hardware'
+  permalink: '/blog/tags/hardware'
+  description: 'Hardware related posts'
+
+sensors:
+  label: 'Sensors'
+  permalink: '/blog/tags/sensors'
+  description: 'Sensors related posts'
+
+microcontrollers:
+  label: 'Microcontrollers'
+  permalink: '/blog/tags/microcontrollers'
+  description: 'Microcontrollers related posts'
+
+artificial-intelligence:
+  label: 'Artificial Intelligence'
+  permalink: '/blog/tags/artificial-intelligence'
+  description: 'Artificial Intelligence related posts'

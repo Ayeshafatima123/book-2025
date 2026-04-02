@@ -21,6 +21,8 @@ Sensors → Data → ML Model → Decision → Action → Feedback → Learning
 
 This loop enables systems to improve their performance through experience and interaction with the physical world.
 
+<!-- truncate -->
+
 ## Types of Machine Learning for Physical Systems
 
 ### Supervised Learning

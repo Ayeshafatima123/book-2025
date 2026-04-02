@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# Introduction to Physical AI: Bridging the Digital and Physical Worlds
+# Introduction to Physical AI & Humanoid Robotics: Bridging the Digital and Physical Worlds
 
 ## Welcome to the Physical AI Revolution
 
@@ -200,4 +200,4 @@ So, let's begin this journey together. The physical world awaits your intelligen
 
 ---
 
-**Next**: [Chapter 1 - Introduction to AI-Hardware Interaction](./content/chapter-01/introduction.md)
+**Next**: [Chapter 1 - Introduction to AI-Hardware Interaction](./chapter1)

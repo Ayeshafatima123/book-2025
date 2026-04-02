@@ -1,25 +1,35 @@
 ---
-id: 3
-title: Tasks File Error Cleanup
-stage: general
-date: 2025-12-10
-surface: agent
+name: Tasks File Error Cleanup
+description: Remove errors from tasks file
 model: claude-sonnet-4-5-20250929
-feature: none
-branch: 001-physical-ai-book
-user: claude
-command: "tasks file cleanup"
-labels: ["cleanup", "tasks", "docusaurus", "server"]
-links:
-  spec: null
-  ticket: null
-  adr: null
-  pr: null
-files:
-  - "/mnt/d/hackathon-book-2025/specs/001-physical-ai-book/tasks.md"
-  - "/mnt/d/hackathon-book-2025/my-website/server.log"
-tests: []
+agent: specify
+argument-hint: general
+tools: []
 ---
+
+## Metadata
+**ID:** 3
+**Stage:** general
+**Date:** 2025-12-10
+**Surface:** agent
+**Feature:** none
+**Branch:** 001-physical-ai-book
+**User:** claude
+**Command:** "tasks file cleanup"
+**Labels:** cleanup, tasks, docusaurus, server
+
+**Links:**
+- Spec: null
+- Ticket: null
+- ADR: null
+- PR: null
+
+**Files:**
+- "/mnt/d/hackathon-book-2025/specs/001-physical-ai-book/tasks.md"
+- "/mnt/d/hackathon-book-2025/my-website/server.log"
+
+**Tests:**
+- none
 
 ## PROMPT_TEXT
 remove error

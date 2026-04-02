@@ -15,35 +15,190 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.6;
 }
 
-/* Beautiful background gradient for Physical AI Book */
+/* Vibrant and colorful animated background for Physical AI Book */
 html {
   min-height: 100%;
-  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  background: linear-gradient(135deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3, #54a0ff, #5f27cd);
+  background-size: 600% 600%;
+  animation: gradientBG 20s ease infinite;
+  animation-direction: alternate;
 }
 
 @keyframes gradientBG {
   0% {
     background-position: 0% 50%;
   }
+  25% {
+    background-position: 25% 50%;
+  }
   50% {
-    background-position: 100% 50%;
+    background-position: 50% 50%;
+  }
+  75% {
+    background-position: 75% 50%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 100% 50%;
   }
 }
 
-/* Additional styling for better text readability on the gradient background */
+/* Enhanced background for dark mode */
+html[data-theme='dark'] {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #c2e9fb, #d4fc79, #96e6a1);
+  background-size: 600% 600%;
+  animation: gradientBG 20s ease infinite;
+  animation-direction: alternate;
+}
+
+/* Dark theme for documentation content */
 .main-wrapper {
-  background: rgba(255, 255, 255, 0.85) !important;
+  background: rgba(30, 30, 40, 0.95) !important;
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  margin: 25px;
+  padding: 25px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* Dark theme for container elements */
+.container {
+  background: rgba(40, 40, 50, 0.9);
   backdrop-filter: blur(10px);
-  border-radius: 8px;
-  margin: 20px;
+  border-radius: 12px;
   padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+/* Dark theme for card styling */
+.col {
+  background: rgba(50, 50, 60, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+}
+
+.col:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Enhanced hero banner styling - keep colorful for homepage */
+.hero--primary {
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.95), rgba(78, 205, 196, 0.95)) !important;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 40px 20px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+/* Enhanced button styling for dark theme */
+.button {
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: none;
+  color: white;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button--primary {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.button--secondary {
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+/* Dark theme for documentation content specifically */
+/* Target documentation content pages */
+article,
+.markdown,
+.docItemContainer,
+.container.padding-vert--lg {
+  background: rgba(30, 30, 40, 0.95) !important;
+  color: white !important;
+  border-radius: 15px;
+  padding: 30px !important;
+  margin: 20px 0 !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* Text content styling for dark theme */
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  color: white !important;
+}
+
+.markdown p,
+.markdown li,
+.markdown td,
+.markdown th {
+  color: white !important;
+}
+
+/* Code blocks in dark theme */
+.theme-code-block {
+  background: rgba(20, 20, 30, 0.9) !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Links in dark theme */
+.markdown a {
+  color: #4ecdc4 !important;
+}
+
+.markdown a:hover {
+  color: #ff6b6b !important;
+}
+
+/* Table styling for dark theme */
+.markdown table th,
+.markdown table td {
+  background: rgba(60, 60, 70, 0.7) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+}
+
+.markdown table th {
+  background: rgba(80, 80, 90, 0.9) !important;
+}
+
+/* Blockquotes in dark theme */
+.markdown blockquote {
+  background: rgba(60, 60, 70, 0.6) !important;
+  border-left: 4px solid #3498db !important;
+  color: white !important;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -56,15 +211,196 @@ html {
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-}
-
-/* Dark theme background compatibility */
-html[data-theme='dark'] {
-  background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  --ifm-background-surface-color: #1a1a1a;
 }
 
 html[data-theme='dark'] .main-wrapper {
-  background: rgba(30, 30, 40, 0.85) !important;
+  background: rgba(30, 30, 40, 0.95) !important;
+}
+
+/* Textbook-specific styling for dark theme */
+.textbook-content {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+}
+
+.textbook-content h1,
+.textbook-content h2,
+.textbook-content h3,
+.textbook-content h4 {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  color: white;
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+  border-color: #3498db !important;
+}
+
+.textbook-content h1 {
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.3em;
+  font-size: 2.2em;
+}
+
+.textbook-content h2 {
+  border-bottom: 1px solid #3498db;
+  padding-bottom: 0.3em;
+  font-size: 1.8em;
+}
+
+.textbook-content p {
+  margin-bottom: 1em;
+  text-align: justify;
+  color: white;
+}
+
+.textbook-content blockquote {
+  border-left: 4px solid #3498db;
+  margin: 1.5em 0;
+  padding: 1em 1.5em;
+  background-color: rgba(60, 60, 70, 0.6) !important;
+  font-style: italic;
+  color: white;
+}
+
+.textbook-content code {
+  font-family: 'Courier New', monospace;
+  background-color: rgba(60, 60, 70, 0.7) !important;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  color: white;
+}
+
+.textbook-content pre {
+  background-color: rgba(20, 20, 30, 0.9) !important;
+  border-radius: 5px;
+  padding: 15px;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.textbook-content pre code {
+  color: #ecf0f1 !important;
+  background: none;
+  padding: 0;
+}
+
+.textbook-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  background: rgba(60, 60, 70, 0.7) !important;
+}
+
+.textbook-content table th,
+.textbook-content table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+}
+
+.textbook-content table th {
+  background-color: rgba(52, 152, 219, 0.8) !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+.textbook-content table tr:nth-child(even) {
+  background-color: rgba(70, 70, 80, 0.5) !important;
+}
+
+.textbook-content table tr:hover {
+  background-color: rgba(90, 90, 100, 0.6) !important;
+}
+
+/* Section numbering for textbook */
+.textbook-section {
+  counter-increment: section;
+  counter-reset: subsection;
+}
+
+.textbook-section h2::before {
+  content: counter(section) ". ";
+}
+
+.textbook-section h3 {
+  counter-increment: subsection;
+}
+
+.textbook-section h3::before {
+  content: counter(section) "." counter(subsection) " ";
+}
+
+/* Better navigation styling */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+}
+
+html[data-theme='dark'] .navbar {
+  background-color: rgba(30, 30, 40, 0.95) !important;
+}
+
+/* Sidebar styling for better textbook navigation */
+.sidebar {
+  font-size: 0.9em;
+}
+
+/* Better code block styling for textbook */
+.theme-code-block {
+  border-radius: 5px;
+  margin: 1.2em 0;
+}
+
+/* Styling for definition lists */
+.textbook-content dl {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 4px solid #3498db;
+}
+
+.textbook-content dt {
+  font-weight: bold;
+  margin-top: 0.5em;
+  color: #2c3e50;
+}
+
+.textbook-content dd {
+  margin-left: 1.5em;
+  margin-bottom: 0.8em;
+}
+
+/* Enhanced list styling */
+.textbook-content ul,
+.textbook-content ol {
+  margin: 1em 0;
+  padding-left: 1.5em;
+}
+
+.textbook-content li {
+  margin-bottom: 0.5em;
+}
+
+.textbook-content ul {
+  list-style-type: disc;
+}
+
+.textbook-content ol {
+  list-style-type: decimal;
+}
+
+/* Better link styling */
+.textbook-content a {
+  text-decoration: underline;
+}
+
+.textbook-content a:hover {
+  text-decoration: none;
 }

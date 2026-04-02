@@ -1,25 +1,35 @@
 ---
-id: "001"
-title: "Fix Documentation Errors"
-stage: "general"
-date: "2025-12-10"
-surface: "agent"
-model: "Claude Sonnet 4.5"
-feature: "none"
-branch: "001-physical-ai-book"
-user: "user"
-command: "fix documentation errors"
-labels: ["documentation", "bug-fix", "mdx", "links"]
-links:
-  spec: null
-  ticket: null
-  adr: null
-  pr: null
-files_yaml:
-  - "/mnt/d/hackathon-book-2025/my-website/docs/troubleshooting/chapter-01.md"
-  - "/mnt/d/hackathon-book-2025/my-website/docs/safety-guidelines/basic-hardware.md"
-tests_yaml: []
+name: Fix Documentation Errors
+description: Fix documentation errors in the Physical AI Book project
+model: Claude Sonnet 4.5
+agent: specify
+argument-hint: general
+tools: []
 ---
+
+## Metadata
+**ID:** "001"
+**Stage:** "general"
+**Date:** "2025-12-10"
+**Surface:** "agent"
+**Feature:** "none"
+**Branch:** "001-physical-ai-book"
+**User:** "user"
+**Command:** "fix documentation errors"
+**Labels:** documentation, bug-fix, mdx, links
+
+**Links:**
+- Spec: null
+- Ticket: null
+- ADR: null
+- PR: null
+
+**Files:**
+- "/mnt/d/hackathon-book-2025/my-website/docs/troubleshooting/chapter-01.md"
+- "/mnt/d/hackathon-book-2025/my-website/docs/safety-guidelines/basic-hardware.md"
+
+**Tests:**
+- none
 
 ## Prompt
 

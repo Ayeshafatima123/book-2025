@@ -1,0 +1,36 @@
+{
+  "name": "hackathon-book-2025",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "ts-node server.ts",
+    "server:js": "node server.js",
+    "dev": "concurrently \"npm run server\" \"cd my-website && npm run start\"",
+    "build": "cd my-website && npm run build",
+    "build:server": "npm run build && npm run server",
+    "build-and-serve": "concurrently \"npm run server\" \"cd my-website && npm run serve\"",
+    "index-content": "ts-node my-website/src/api/document-indexer.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@qdrant/js-client-rest": "^1.16.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "openai": "^6.10.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.19.3",
+    "concurrently": "^8.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

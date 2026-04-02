@@ -1,25 +1,33 @@
 ---
-id: 1
-title: create-physical-ai-book-constitution
-stage: constitution
-date: 2025-12-10
-surface: agent
+name: create-physical-ai-book-constitution
+description: Create constitution for PHYSICAL-AI-BOOK project
 model: claude-sonnet-4-5-20250929
-feature: none
-branch: main
-user: user
-command: /sp.constitution create a PHYSICAL-AI-BOOK nice book ho
-labels: [constitution,physical-ai-book,project-setup]
-links:
-  spec: null
-  ticket: null
-  adr: null
-  pr: null
-files:
- - .specify/memory/constitution.md
-tests:
- - none
+agent: agent
+argument-hint: constitution
+tools: []
 ---
+
+## Metadata
+**ID:** 1
+**Stage:** constitution
+**Date:** 2025-12-10
+**Surface:** agent
+**Feature:** none
+**User:** user
+**Command:** /sp.constitution create a PHYSICAL-AI-BOOK nice book ho
+**Labels:** constitution, physical-ai-book, project-setup
+
+**Links:**
+- Spec: null
+- Ticket: null
+- ADR: null
+- PR: null
+
+**Files:**
+- .specify/memory/constitution.md
+
+**Tests:**
+- none
 
 ## Prompt
 

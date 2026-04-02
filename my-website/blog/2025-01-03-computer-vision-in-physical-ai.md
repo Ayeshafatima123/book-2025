@@ -19,6 +19,8 @@ In Physical AI systems, computer vision serves as the eyes of intelligent machin
 - **Inspect products** for quality control in manufacturing
 - **Monitor environments** for security and safety applications
 
+<!-- truncate -->
+
 ## Types of Visual Sensors
 
 ### Standard Cameras

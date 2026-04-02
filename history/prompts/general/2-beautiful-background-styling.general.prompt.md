@@ -1,24 +1,34 @@
 ---
-id: 2
-title: Beautiful Background Styling
-stage: general
-date: 2025-12-10
-surface: agent
+name: Beautiful Background Styling
+description: Create a beautiful background color for the book
 model: claude-sonnet-4-5-20250929
-feature: none
-branch: 001-physical-ai-book
-user: claude
-command: "Custom background styling"
-labels: ["styling", "ui", "css", "docusaurus"]
-links:
-  spec: null
-  ticket: null
-  adr: null
-  pr: null
-files:
-  - "/mnt/d/hackathon-book-2025/my-website/src/css/custom.css"
-tests: []
+agent: specify
+argument-hint: general
+tools: []
 ---
+
+## Metadata
+**ID:** 2
+**Stage:** general
+**Date:** 2025-12-10
+**Surface:** agent
+**Feature:** none
+**Branch:** 001-physical-ai-book
+**User:** claude
+**Command:** "Custom background styling"
+**Labels:** styling, ui, css, docusaurus
+
+**Links:**
+- Spec: null
+- Ticket: null
+- ADR: null
+- PR: null
+
+**Files:**
+- "/mnt/d/hackathon-book-2025/my-website/src/css/custom.css"
+
+**Tests:**
+- none
 
 ## PROMPT_TEXT
 Create a beautiful background color for the book

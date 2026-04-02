@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "فزیکل ای اور ہیومنوائڈ روبوٹکس",
+    "description": "The title in the navbar"
+  },
+  "item.label.Book Chapters": {
+    "message": "کتاب کے ابواب",
+    "description": "Navbar item with label Book Chapters"
+  },
+  "item.label.Textbook": {
+    "message": "درسی کتاب",
+    "description": "Navbar item with label Textbook"
+  },
+  "item.label.Get Started": {
+    "message": "شروع کریں",
+    "description": "Navbar item with label Get Started"
+  },
+  "item.label.AI Assistant": {
+    "message": "AI اسسٹنٹ",
+    "description": "Navbar item with label AI Assistant"
+  },
+  "item.label.Blog": {
+    "message": "بلاگ",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.GitHub": {
+    "message": "گٹ ہب",
+    "description": "Navbar item with label GitHub"
+  }
+}

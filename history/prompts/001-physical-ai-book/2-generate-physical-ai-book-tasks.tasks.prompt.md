@@ -1,25 +1,34 @@
 ---
-id: 2
-title: generate-physical-ai-book-tasks
-stage: tasks
-date: 2025-12-10
-surface: agent
+name: generate-physical-ai-book-tasks
+description: Generate tasks for PHYSICAL-AI-BOOK project
 model: claude-sonnet-4-5-20250929
-feature: 001-physical-ai-book
-branch: 001-physical-ai-book
-user: user
-command: /sp.tasks
-labels: [tasks,physical-ai-book,implementation]
-links:
-  spec: specs/001-physical-ai-book/spec.md
-  ticket: null
-  adr: null
-  pr: null
-files:
- - specs/001-physical-ai-book/tasks.md
-tests:
- - none
+agent: specify
+argument-hint: tasks
+tools: []
 ---
+
+## Metadata
+**ID:** 2
+**Stage:** tasks
+**Date:** 2025-12-10
+**Surface:** agent
+**Feature:** 001-physical-ai-book
+**Branch:** 001-physical-ai-book
+**User:** user
+**Command:** /sp.tasks
+**Labels:** tasks, physical-ai-book, implementation
+
+**Links:**
+- Spec: specs/001-physical-ai-book/spec.md
+- Ticket: null
+- ADR: null
+- PR: null
+
+**Files:**
+- specs/001-physical-ai-book/tasks.md
+
+**Tests:**
+- none
 
 ## Prompt
 

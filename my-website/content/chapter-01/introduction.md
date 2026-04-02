@@ -3,7 +3,7 @@ sidebar_position: 1
 title: Introduction
 ---
 
-# Chapter 1 — Introduction to Physical AI
+# Chapter 1 — Introduction to Physical AI & Humanoid Robotics
 
 Welcome to the **Physical AI Book** — your complete guide to understanding and building AI systems that interact with the real, physical world.
 

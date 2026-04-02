@@ -27,6 +27,12 @@ function HomepageHeader() {
             to="/docs/introduction">
             Start Reading - 10min ⏱️
           </Link>
+          <Link
+            className="button button--primary button--lg"
+            to="/introduction-slideshow"
+            style={{ marginLeft: '1rem' }}>
+            View Interactive Slideshow
+          </Link>
         </div>
       </div>
     </header>
@@ -38,7 +44,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`Welcome to ${siteConfig.title}`}
-      description="Physical AI Book - Bridging Artificial Intelligence and Physical Systems">
+      description="Physical AI & Humanoid Robotics - Bridging Artificial Intelligence and Physical Systems">
       <HomepageHeader />
       <main>
         <section className={styles.bookDetails}>

@@ -9,6 +9,8 @@ tags: [hardware, robotics, sensors, microcontrollers]
 
 Building Physical AI systems requires the right combination of hardware components that can bridge the gap between digital algorithms and physical actions. In this post, we'll explore the essential hardware you'll need to get started with Physical AI projects.
 
+<!-- truncate -->
+
 ## Microcontrollers & Single-Board Computers
 
 ### Arduino Family

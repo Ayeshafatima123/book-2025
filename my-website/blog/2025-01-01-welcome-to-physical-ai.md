@@ -18,6 +18,8 @@ Physical AI represents the convergence of machine learning, robotics, embedded s
 - **Act** upon the physical world through actuators, motors, and other output devices
 - **Learn** from the outcomes of their physical interactions to improve future performance
 
+<!-- truncate -->
+
 ## Why Physical AI Matters
 
 The importance of Physical AI extends far beyond academic curiosity. It's driving innovation across multiple sectors:

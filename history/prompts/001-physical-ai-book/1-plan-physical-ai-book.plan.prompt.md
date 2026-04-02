@@ -1,30 +1,39 @@
 ---
-id: 1
-title: plan-physical-ai-book
-stage: plan
-date: 2025-12-10
-surface: agent
+name: plan-physical-ai-book
+description: Plan for PHYSICAL-AI-BOOK project
 model: claude-sonnet-4-5-20250929
-feature: 001-physical-ai-book
-branch: 001-physical-ai-book
-user: user
-command: /sp.plan in book
-labels: [plan,physical-ai-book,implementation]
-links:
-  spec: specs/001-physical-ai-book/spec.md
-  ticket: null
-  adr: null
-  pr: null
-files:
- - specs/001-physical-ai-book/plan.md
- - specs/001-physical-ai-book/research.md
- - specs/001-physical-ai-book/data-model.md
- - specs/001-physical-ai-book/quickstart.md
- - specs/001-physical-ai-book/contracts/hardware-api.yaml
- - CLAUDE.md
-tests:
- - none
+agent: specify
+argument-hint: plan
+tools: []
 ---
+
+## Metadata
+**ID:** 1
+**Stage:** plan
+**Date:** 2025-12-10
+**Surface:** agent
+**Feature:** 001-physical-ai-book
+**Branch:** 001-physical-ai-book
+**User:** user
+**Command:** /sp.plan in book
+**Labels:** plan, physical-ai-book, implementation
+
+**Links:**
+- Spec: specs/001-physical-ai-book/spec.md
+- Ticket: null
+- ADR: null
+- PR: null
+
+**Files:**
+- specs/001-physical-ai-book/plan.md
+- specs/001-physical-ai-book/research.md
+- specs/001-physical-ai-book/data-model.md
+- specs/001-physical-ai-book/quickstart.md
+- specs/001-physical-ai-book/contracts/hardware-api.yaml
+- CLAUDE.md
+
+**Tests:**
+- none
 
 ## Prompt
 

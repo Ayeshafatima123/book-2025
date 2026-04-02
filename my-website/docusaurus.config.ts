@@ -1,39 +1,41 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 const config: Config = {
-  title: 'Physical AI Book',
+  title: 'Physical AI & Humanoid Robotics',
   tagline: 'Bridging Artificial Intelligence and Physical Systems',
   favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
-  url: 'https://hackathon-book-2025.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // ✅ GitHub Pages URL
+  url: 'https://ayeshafatima123.github.io',
+  baseUrl: '/hackathon--book-2025/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'hackathon-book-2025', // Usually your GitHub org/user name.
-  projectName: 'my-website', // Usually your repo name.
+  // ✅ GitHub repo info (MOST IMPORTANT)
+  organizationName: 'Ayeshafatima123',
+  projectName: 'hackathon--book-2025',
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   trailingSlash: false,
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'ur'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      },
+      ur: {
+        label: 'اردو',
+        direction: 'rtl',
+      },
+    },
   },
 
   presets: [
@@ -42,22 +44,15 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/hackathon-book-2025/my-website/edit/main/',
+            'https://github.com/Ayeshafatima123/hackathon--book-2025/edit/main/',
+          path: 'docs',
+          routeBasePath: 'docs',
         },
         blog: {
           showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/hackathon-book-2025/my-website/edit/main/',
-          // Useful options to enforce blogging best practices
+            'https://github.com/Ayeshafatima123/hackathon--book-2025/edit/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -69,16 +64,29 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'textbook',
+        path: 'textbook',
+        routeBasePath: 'textbook',
+        sidebarPath: './textbook-sidebars.ts',
+        editUrl:
+          'https://github.com/Ayeshafatima123/hackathon--book-2025/edit/main/',
+      },
+    ],
+  ],
+
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Physical AI Book',
+      title: 'Physical AI & Humanoid Robotics',
       logo: {
-        alt: 'Physical AI Book Logo',
+        alt: 'Physical AI & Humanoid Robotics Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -88,10 +96,18 @@ const config: Config = {
           position: 'left',
           label: 'Book Chapters',
         },
-        {to: '/docs/introduction', label: 'Get Started', position: 'left'},
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/hackathon-book-2025/my-website',
+          type: 'doc',
+          docId: 'front-matter/title-page',
+          position: 'left',
+          label: 'Textbook',
+          docsPluginId: 'textbook',
+        },
+        { to: '/docs/introduction', label: 'Get Started', position: 'left' },
+        { to: '/chatbot', label: 'AI Assistant', position: 'left' },
+        { to: '/blog', label: 'Blog', position: 'left' },
+        {
+          href: 'https://github.com/Ayeshafatima123/hackathon--book-2025',
           label: 'GitHub',
           position: 'right',
         },
@@ -103,13 +119,15 @@ const config: Config = {
         {
           title: 'Book',
           items: [
+            { label: 'Introduction', to: '/docs/introduction' },
+            { label: 'Chapters', to: '/docs/introduction' },
             {
-              label: 'Introduction',
-              to: '/docs/introduction',
+              label: 'Textbook Version',
+              to: '/textbook/front-matter/title-page',
             },
             {
-              label: 'Chapters',
-              to: '/docs/introduction',
+              label: 'AI Assistant',
+              to: '/chatbot',
             },
           ],
         },
@@ -118,33 +136,22 @@ const config: Config = {
           items: [
             {
               label: 'GitHub Repository',
-              href: 'https://github.com/hackathon-book-2025/my-website',
-            },
-            {
-              label: 'AI & Robotics Community',
-              href: 'https://example.com/ai-robotics-community',
-            },
-            {
-              label: 'Hardware Guide',
-              to: '/hardware-guides',
+              href: 'https://github.com/Ayeshafatima123/hackathon--book-2025',
             },
           ],
         },
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
+            { label: 'Blog', to: '/blog' },
             {
               label: 'GitHub',
-              href: 'https://github.com/hackathon-book-2025/my-website',
+              href: 'https://github.com/Ayeshafatima123/hackathon--book-2025',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Physical AI Book. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics.`,
     },
     prism: {
       theme: prismThemes.github,

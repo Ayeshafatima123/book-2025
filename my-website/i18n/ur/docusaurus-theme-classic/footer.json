@@ -1,0 +1,42 @@
+{
+  "link.title.Book": {
+    "message": "کتاب",
+    "description": "The title of the first footer column"
+  },
+  "link.item.label.Introduction": {
+    "message": "تعارف",
+    "description": "The label of footer link pointing to the introduction page"
+  },
+  "link.item.label.Chapters": {
+    "message": "ابواب",
+    "description": "The label of footer link pointing to the chapters page"
+  },
+  "link.item.label.Textbook Version": {
+    "message": " textbook ورژن",
+    "description": "The label of footer link pointing to the textbook version"
+  },
+  "link.item.label.AI Assistant": {
+    "message": "AI اسسٹنٹ",
+    "description": "The label of footer link pointing to the AI assistant"
+  },
+  "link.title.Resources": {
+    "message": "وسائل",
+    "description": "The title of the second footer column"
+  },
+  "link.item.label.GitHub Repository": {
+    "message": "گٹ ہب ریپوزیٹری",
+    "description": "The label of footer link pointing to the GitHub repository"
+  },
+  "link.title.More": {
+    "message": "مزید",
+    "description": "The title of the third footer column"
+  },
+  "link.item.label.Blog": {
+    "message": "بلاگ",
+    "description": "The label of footer link pointing to the blog"
+  },
+  "copyright": {
+    "message": "کاپی رائٹ © ${currentYear} فزیکل ای اور ہیومنوائڈ روبوٹکس.",
+    "description": "The footer copyright"
+  }
+}
