@@ -26,11 +26,13 @@
     "openai": "^6.10.0"
   },
   "devDependencies": {
+    "@docusaurus/tsconfig": "^3.9.2",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/node": "^22.19.3",
     "concurrently": "^8.2.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
+    
   }
 }

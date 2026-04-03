@@ -19,8 +19,8 @@
     "server:prod": "node ../dist/server.js"
   },
   "dependencies": {
-    "@docusaurus/core": "3.9.2",
-    "@docusaurus/preset-classic": "3.9.2",
+    "@docusaurus/core": "^3.9.2",
+    "@docusaurus/preset-classic": "^3.9.2",
     "@mdx-js/react": "^3.0.0",
     "@qdrant/js-client-rest": "^1.16.2",
     "clsx": "^2.0.0",
